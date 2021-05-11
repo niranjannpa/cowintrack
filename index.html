@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     var query = '';
     var index = window.location.href.indexOf('?');
-    if(index == -1){
+    if(index != -1){
         query = window.location.href.slice(window.location.href.indexOf('?') + 1);
         query = query + "&date=" + getTodayDate();
     }
