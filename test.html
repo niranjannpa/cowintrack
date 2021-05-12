@@ -36,7 +36,6 @@ $(document).ready(function(){
 
             if(result.length == 0)
                 $("#result").html('No slots available for 18+ for the given input');
-                beep();
             else
                 $("#result").html(JSON.stringify(result, undefined, 2));
         }
