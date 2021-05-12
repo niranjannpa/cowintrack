@@ -37,7 +37,8 @@ $(document).ready(function(){
                 }
                 
             }
-
+	    var audio = document.getElementsByTagName("audio")[0];
+	    audio.play();
             if(result.length == 0)
                 $("#result").html('No slots available for 18+ for the given input');
             else
@@ -64,6 +65,6 @@ function getTodayDate(){
 </head>
 <body>
     <pre style="font-size: 22px" id="result"></pre>
-    <meta http-equiv="refresh" content="5">
+    <meta http-equiv="refresh" content="50">
 </body>
 </html>
