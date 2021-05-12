@@ -38,19 +38,15 @@ $(document).ready(function(){
                 
             }
 	    var audio = document.getElementsByTagName("audio")[0];
-	    audio.play();
             if(result.length == 0)
                 $("#result").html('No slots available for 18+ for the given input');
+		audio.play();
             else
                 $("#result").html(JSON.stringify(result, undefined, 2));
         }
    });
 
 });
-	
-function playAudio() { 
-  x.play(); 
-} 
     
 function getTodayDate(){
     var today = new Date();
